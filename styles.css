@@ -15,7 +15,7 @@ body {
   color: var(--ink);
   background: var(--paper);
   font-family: Manrope, "Noto Sans SC", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.62;
 }
 a { color: inherit; text-decoration: none; }
@@ -36,16 +36,15 @@ a { color: inherit; text-decoration: none; }
 nav { display: flex; justify-content: center; gap: clamp(30px, 5vw, 68px); font-size: .98rem; font-weight: 500; }
 nav a:hover, .links a:hover { color: var(--accent); }
 .lang-switch {
-  min-width: 42px;
-  padding: 6px 9px;
+  min-width: 40px;
+  padding: 4px 0;
   color: var(--accent);
-  border: 1px solid #cfe3f6;
-  border-radius: 4px;
-  font-size: .75rem;
+  border-bottom: 1px solid transparent;
+  font-size: .78rem;
   font-weight: 700;
   text-align: center;
 }
-.lang-switch:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
+.lang-switch:hover { border-bottom-color: var(--accent); }
 .lang-switch:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 main { max-width: 1060px; margin: auto; padding: 0 28px; }
@@ -68,7 +67,8 @@ main { max-width: 1060px; margin: auto; padding: 0 28px; }
 }
 .portrait-wrap figcaption { margin-top: 8px; color: var(--muted); font: .65rem "DM Mono", monospace; }
 .eyebrow { margin: 0; color: var(--muted); font: 500 .68rem "DM Mono", monospace; letter-spacing: .06em; text-transform: uppercase; }
-.hero h1 { margin: 7px 0 5px; font-size: clamp(2rem, 4vw, 2.7rem); line-height: 1.08; letter-spacing: -.045em; }
+.hero h1 { margin: 7px 0 5px; font-size: clamp(2rem, 4vw, 2.65rem); line-height: 1.08; letter-spacing: -.045em; }
+.native-name { margin-left: 9px; color: var(--muted); font-size: .42em; font-weight: 500; letter-spacing: 0; vertical-align: middle; white-space: nowrap; }
 .role { margin: 0; color: var(--accent-dark); font-size: .92rem; font-weight: 700; }
 .intro { max-width: 720px; margin: 14px 0 0; font-size: .91rem; line-height: 1.7; }
 .secondary-intro { margin-top: 7px; }
@@ -96,7 +96,8 @@ main { max-width: 1060px; margin: auto; padding: 0 28px; }
 .timeline p { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.5; }
 
 .section-heading { align-self: start; }
-.publication-note { margin: 8px 0 0; color: var(--muted); font-size: .66rem; }
+.section-summary { margin: 7px 0 0; color: var(--muted); font-size: .7rem; line-height: 1.5; }
+.publication-note { margin: 5px 0 0; color: var(--muted); font-size: .63rem; line-height: 1.45; }
 .publication { padding: 0 0 17px; }
 .publication + .publication { padding-top: 17px; border-top: 1px solid var(--line); }
 .publication-title { display: grid; grid-template-columns: max-content 1fr max-content; gap: 11px; align-items: start; }
@@ -129,12 +130,13 @@ footer > span:last-child { grid-column: 1 / -1; font: .65rem "DM Mono", monospac
   .brand { font-size: 1.02rem; }
   nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; gap: 18px; overflow-x: auto; font-size: .75rem; scrollbar-width: none; }
   nav::-webkit-scrollbar { display: none; }
-  .lang-switch { grid-column: 2; grid-row: 1; min-width: 38px; padding: 5px 8px; font-size: .7rem; }
+  .lang-switch { grid-column: 2; grid-row: 1; min-width: 34px; padding: 3px 0; font-size: .7rem; }
   main { padding: 0 20px; }
   .hero { grid-template-columns: 145px 1fr; gap: 24px; padding: 28px 0 34px; }
   .portrait-wrap { width: 145px; }
   .hero h1 { font-size: 2rem; }
-  .intro { font-size: .86rem; }
+  .intro { font-size: .84rem; }
+  .native-name { display: block; margin: 5px 0 0; font-size: .4em; }
   .section { grid-template-columns: 1fr; gap: 14px; padding: 30px 0; }
   .section-label { font-size: 1.1rem; }
   .publication-title { grid-template-columns: 1fr max-content; gap: 5px 8px; }
