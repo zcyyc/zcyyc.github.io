@@ -131,9 +131,9 @@ const escapeHtml = (value) => String(value)
   .replaceAll('"', "&quot;")
   .replaceAll("'", "&#039;");
 
-const emphasizeOwner = (authors) => escapeHtml(authors).replaceAll(
-  "Chenyu Zhao",
-  "<strong>Chenyu Zhao</strong>"
+const emphasizeOwner = (authors) => escapeHtml(authors).replace(
+  /Chenyu Zhao|赵晨宇/gi,
+  "<strong>$&</strong>"
 );
 
 const renderLink = (url, label, hint) => {

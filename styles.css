@@ -196,19 +196,19 @@ main > section { width: 100%; max-width: 980px; margin-right: auto; margin-left:
   color: var(--accent-dark);
   background: #e9edff;
   border-radius: 999px;
-  font: 700 .66rem "DM Mono", monospace;
+  font: 700 .72rem "DM Mono", monospace;
   letter-spacing: .04em;
   text-transform: uppercase;
   transition: transform .28s cubic-bezier(.2, .7, .2, 1), background-color .28s ease;
 }
 .publication h3 { margin: 0; font-size: 1rem; line-height: 1.45; letter-spacing: -.012em; font-weight: 750; }
 .grade { display: inline-flex; min-width: 47px; padding: 2px 7px; justify-content: center; border-radius: 3px; font: 700 .6rem "DM Mono", monospace; white-space: nowrap; }
-.grade-a { color: #a92e1c; background: #fff1ee; border: 1px solid #f6cdc5; }
+.grade-a { color: #28734e; background: #edf8f1; border: 1px solid #bfe2cd; }
 .grade-b { color: var(--grade-b); background: #fff8e8; border: 1px solid #efdda9; }
-.venue-full { margin: 7px 0 0; color: #77869a; font-size: .7rem; line-height: 1.48; }
-.venue-full span { margin-right: 6px; color: #53657a; font: 600 .58rem "DM Mono", monospace; text-transform: uppercase; }
+.venue-full { margin: 8px 0 0; color: #6d7d94; font-size: .78rem; line-height: 1.5; }
+.venue-full span { margin-right: 7px; color: #4e6078; font: 700 .64rem "DM Mono", monospace; text-transform: uppercase; }
 .publication .authors { margin: 8px 0 0; color: var(--muted); font-size: .79rem; line-height: 1.55; }
-.publication .authors strong { color: var(--ink); font-weight: 700; }
+.publication .authors strong { color: var(--ink); font-weight: 800; }
 .pub-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 12px; }
 .pub-link {
   display: inline-flex;
