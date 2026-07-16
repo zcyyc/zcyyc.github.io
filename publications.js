@@ -1,7 +1,7 @@
 const publications = [
   {
     year: 2026,
-    venue: "ASE Industry'26",
+    venue: "ASE'26",
     ccf: "A",
     type: { en: "Conference", zh: "会议" },
     fullVenue: "ACM/IEEE International Conference on Automated Software Engineering · Industry Showcase Track",
