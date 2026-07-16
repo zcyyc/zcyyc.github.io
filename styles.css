@@ -45,7 +45,7 @@ a { color: inherit; text-decoration: none; }
 }
 .brand { color: var(--muted); font: 500 .67rem "DM Mono", monospace; letter-spacing: .18em; white-space: nowrap; }
 .sidebar-profile { margin-top: 30px; text-align: center; }
-.sidebar-profile img { display: block; width: 166px; aspect-ratio: 1 / 1; margin: 0 auto 18px; border: 1px solid var(--line); border-radius: 9px; object-fit: cover; object-position: center 22%; }
+.sidebar-profile img { display: block; width: 166px; aspect-ratio: 5 / 7; margin: 0 auto 18px; border: 1px solid var(--line); border-radius: 9px; object-fit: cover; object-position: center; }
 .sidebar-profile h2 { margin: 0; font-size: 1.48rem; line-height: 1.2; letter-spacing: -.035em; }
 .sidebar-native-name { margin: 5px 0 0; color: var(--muted); font-size: .82rem; }
 .sidebar-role { margin: 11px 0 0; color: var(--accent-dark); font-size: .88rem; font-weight: 700; }
