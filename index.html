@@ -12,13 +12,16 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top">Chenyu Zhao</a>
-      <nav aria-label="Primary navigation">
-        <a href="#highlights">Research</a>
-        <a href="#news">News</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-      </nav>
+      <div class="header-inner">
+        <a class="brand" href="#top">Chenyu Zhao</a>
+        <nav aria-label="Primary navigation">
+          <a href="#news">News</a>
+          <a href="#experience">Experience</a>
+          <a href="#highlights">Research</a>
+          <a href="#publications">Publications</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch color theme">☼</button>
+      </div>
     </header>
 
     <main id="top">
@@ -133,5 +136,23 @@
       <span class="contact-note">Contact details available upon request.</span>
       <span>© 2026 Chenyu Zhao</span>
     </footer>
+    <script>
+      const themeToggle = document.querySelector('.theme-toggle');
+      const savedTheme = localStorage.getItem('theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+      function setTheme(theme) {
+        document.documentElement.dataset.theme = theme;
+        themeToggle.textContent = theme === 'dark' ? '☾' : '☼';
+        themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+      }
+
+      setTheme(savedTheme || preferredTheme);
+      themeToggle.addEventListener('click', () => {
+        const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', nextTheme);
+        setTheme(nextTheme);
+      });
+    </script>
   </body>
 </html>

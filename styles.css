@@ -8,6 +8,17 @@
   --grade-b: #866118;
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e8edf5;
+  --muted: #a6b2c4;
+  --paper: #111722;
+  --line: #293344;
+  --accent: #58aaf0;
+  --accent-dark: #79baf2;
+  --grade-b: #e8c36a;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -20,17 +31,39 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 
-.site-header {
-  max-width: 1060px;
+.site-header { width: 100%; border-bottom: 1px solid var(--line); }
+.header-inner {
+  width: 100%;
+  max-width: 1160px;
+  min-height: 72px;
   margin: auto;
-  padding: 19px 28px;
-  display: flex;
-  justify-content: space-between;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 48px;
   align-items: center;
 }
-.brand { font-size: 1rem; font-weight: 800; letter-spacing: -.025em; }
-nav { display: flex; gap: 21px; font-size: .78rem; font-weight: 600; }
+.brand { font-size: 1.18rem; font-weight: 800; letter-spacing: -.03em; white-space: nowrap; }
+nav { display: flex; justify-content: center; gap: clamp(30px, 5vw, 68px); font-size: .98rem; font-weight: 500; }
 nav a:hover, .links a:hover { color: var(--accent); }
+.theme-toggle {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  font: 1.25rem/1 sans-serif;
+  cursor: pointer;
+}
+.theme-toggle:hover { color: var(--accent); background: var(--line); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+html[data-theme="dark"] .portrait-wrap img { border-color: var(--line); }
+html[data-theme="dark"] .grade-a { color: #ffb6aa; background: #3a2425; border-color: #73413b; }
+html[data-theme="dark"] .grade-b { background: #342f20; border-color: #655a32; }
 
 main { max-width: 1060px; margin: auto; padding: 0 28px; }
 .hero {
@@ -115,9 +148,11 @@ footer p { margin: 0; color: var(--ink); font-size: .88rem; }
 footer > span:last-child { grid-column: 1 / -1; font: .65rem "DM Mono", monospace; }
 
 @media (max-width: 720px) {
-  .site-header { padding: 17px 20px; align-items: flex-start; gap: 16px; }
-  .brand { white-space: nowrap; }
-  nav { flex-wrap: wrap; justify-content: flex-end; gap: 7px 12px; font-size: .64rem; }
+  .header-inner { min-height: auto; padding: 15px 20px 12px; grid-template-columns: 1fr max-content; gap: 11px 16px; }
+  .brand { font-size: 1.02rem; }
+  nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; gap: 18px; overflow-x: auto; font-size: .75rem; scrollbar-width: none; }
+  nav::-webkit-scrollbar { display: none; }
+  .theme-toggle { grid-column: 2; grid-row: 1; width: 30px; height: 30px; font-size: 1.08rem; }
   main { padding: 0 20px; }
   .hero { grid-template-columns: 145px 1fr; gap: 24px; padding: 28px 0 34px; }
   .portrait-wrap { width: 145px; }
