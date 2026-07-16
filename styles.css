@@ -1,11 +1,11 @@
 :root {
   --ink: #172033;
-  --muted: #6f7082;
-  --paper: #fbf9ff;
-  --panel: rgba(255, 255, 255, .72);
-  --line: #e8e1f2;
-  --accent: #7653b5;
-  --accent-dark: #5d3d97;
+  --muted: #687086;
+  --paper: #f7f8ff;
+  --panel: rgba(255, 255, 255, .76);
+  --line: #dfe4f4;
+  --accent: #596dcc;
+  --accent-dark: #4054b4;
   --grade-b: #866118;
 }
 
@@ -15,7 +15,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  background-image: radial-gradient(#e7def4 .7px, transparent .7px);
+  background-image: radial-gradient(#dbe1fa .7px, transparent .7px);
   background-size: 18px 18px;
   font-family: Manrope, "Noto Sans SC", sans-serif;
   font-size: 16px;
@@ -52,7 +52,7 @@ a { color: inherit; text-decoration: none; }
 .sidebar-location { margin: 8px 0 0; color: var(--muted); font-size: .73rem; }
 nav { margin-top: 24px; padding-top: 19px; display: flex; flex-direction: column; gap: 11px; border-top: 1px solid var(--line); font-size: .79rem; font-weight: 500; }
 nav a { position: relative; padding-left: 16px; }
-nav a:before { content: ""; position: absolute; left: 1px; top: .68em; width: 5px; height: 5px; border-radius: 50%; background: #d8cde9; }
+nav a:before { content: ""; position: absolute; left: 1px; top: .68em; width: 5px; height: 5px; border-radius: 50%; background: #c5cdef; }
 nav a:hover, .links a:hover { color: var(--accent); }
 nav a:hover:before { background: var(--accent); }
 .lang-switch {
@@ -61,7 +61,7 @@ nav a:hover:before { background: var(--accent); }
   margin-top: 20px;
   padding: 5px 10px;
   color: var(--accent);
-  border: 1px solid #d9caee;
+  border: 1px solid #bdc7ef;
   border-radius: 4px;
   font-size: .78rem;
   font-weight: 700;
@@ -86,9 +86,6 @@ main > section { width: 100%; max-width: 980px; margin-right: auto; margin-left:
 
 .section {
   padding: 37px 0;
-  display: grid;
-  grid-template-columns: 155px 1fr;
-  gap: 40px;
   scroll-margin-top: 20px;
 }
 .section-label { color: var(--ink); font-size: 1.18rem; line-height: 1.3; font-weight: 800; letter-spacing: -.025em; }
@@ -102,7 +99,7 @@ main > section { width: 100%; max-width: 980px; margin-right: auto; margin-left:
 .timeline h3 { margin: 0 0 2px; font-size: .93rem; }
 .timeline p { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.5; }
 
-.section-heading { align-self: start; }
+.section-heading { margin-bottom: 22px; }
 .section-summary { margin: 7px 0 0; color: var(--muted); font-size: .7rem; line-height: 1.5; }
 .publication-note { margin: 5px 0 0; color: var(--muted); font-size: .63rem; line-height: 1.45; }
 .publication-list { min-width: 0; }
@@ -116,7 +113,7 @@ main > section { width: 100%; max-width: 980px; margin-right: auto; margin-left:
   font: 700 .9rem "DM Mono", monospace;
   letter-spacing: .14em;
 }
-.pub-year-heading:after { content: ""; width: 70px; height: 1px; background: #cfc2e3; }
+.pub-year-heading:after { content: ""; width: 70px; height: 1px; background: #b9c4eb; }
 .pub-card-list { display: grid; gap: 16px; }
 .publication {
   display: grid;
@@ -126,15 +123,15 @@ main > section { width: 100%; max-width: 980px; margin-right: auto; margin-left:
   background: rgba(255, 255, 255, .78);
   border: 1px solid var(--line);
   border-radius: 14px;
-  box-shadow: 0 8px 28px rgba(85, 62, 126, .05);
+  box-shadow: 0 8px 28px rgba(54, 72, 148, .06);
 }
 .publication-figure {
   position: relative;
   min-height: 170px;
   overflow: hidden;
   aspect-ratio: 16 / 10;
-  background: #f5f1fb;
-  border: 1px dashed #d7c9e8;
+  background: #f1f3ff;
+  border: 1px dashed #cbd3f3;
   border-radius: 10px;
 }
 .publication-figure img { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; object-fit: cover; }
@@ -147,17 +144,17 @@ main > section { width: 100%; max-width: 980px; margin-right: auto; margin-left:
   place-content: center;
   gap: 7px;
   padding: 18px;
-  color: #8c7ca2;
+  color: #6875b3;
   text-align: center;
 }
 .figure-placeholder span { font-size: .76rem; font-weight: 700; }
-.figure-placeholder code { color: #a198ac; font: .57rem/1.45 "DM Mono", monospace; word-break: break-all; }
+.figure-placeholder code { color: #8f99c3; font: .57rem/1.45 "DM Mono", monospace; word-break: break-all; }
 .publication-content { min-width: 0; align-self: center; }
 .publication-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 9px; }
 .publication-venue {
   padding: 5px 9px;
   color: var(--accent-dark);
-  background: #eee8f8;
+  background: #e9edff;
   border-radius: 999px;
   font: 700 .66rem "DM Mono", monospace;
   letter-spacing: .04em;
@@ -178,14 +175,14 @@ main > section { width: 100%; max-width: 980px; margin-right: auto; margin-left:
   gap: 3px;
   padding: 5px 10px;
   color: var(--accent-dark);
-  border: 1px solid #d9caee;
+  border: 1px solid #c3cdf0;
   border-radius: 999px;
   font-size: .72rem;
   line-height: 1.2;
   font-weight: 700;
 }
 a.pub-link:hover { color: #fff; background: var(--accent); border-color: var(--accent); }
-.pub-link.is-placeholder { color: #9a91a8; border-style: dashed; cursor: default; }
+.pub-link.is-placeholder { color: #8791b8; border-style: dashed; cursor: default; }
 
 footer {
   margin: 12px 0 0 300px;
@@ -225,7 +222,8 @@ footer > span:last-child { grid-column: 1 / -1; font: .65rem "DM Mono", monospac
 @media (max-width: 720px) {
   .hero h1 { font-size: 2rem; }
   .intro { font-size: .84rem; }
-  .section { grid-template-columns: 1fr; gap: 14px; padding: 30px 0; }
+  .section { padding: 30px 0; }
+  .section-heading { margin-bottom: 16px; }
   .section-label { font-size: 1.1rem; }
   .publication { grid-template-columns: 1fr; gap: 14px; padding: 14px; }
   .publication-figure { min-height: 0; }
