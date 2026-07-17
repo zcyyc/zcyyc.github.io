@@ -8,8 +8,8 @@ const publications = [
     title: "Debugging the Debuggers: Failure-Anchored Structured Recovery for Software Engineering Agents",
     authors: "Chenyu Zhao, Shenglin Zhang*, Yihang Lin, Wenwei Gu, Zhimin Chen, Yongqian Sun, Dan Pei, Chetan Bansal, Saravan Rajmohan, Minghua Ma.",
     image: "assets/publications/2026-ase-debuggers.jpg",
-    paper: "",
-    code: ""
+    paper: "https://arxiv.org/abs/2605.08717",
+    code: "https://github.com/zcyyc/probe"
   },
   {
     year: 2026,
@@ -20,8 +20,8 @@ const publications = [
     title: "Can Language Models Go Beyond Coding? Assessing the Capability of Language Models to Build Real-World Systems",
     authors: "Chenyu Zhao, Shenglin Zhang*, Zeshun Huang, Weilin Jin, Yongqian Sun, Dan Pei, Chaoyun Zhang, Qingwei Lin, Chetan Bansal, Saravan Rajmohan, Minghua Ma.",
     image: "assets/publications/2026-tosem-syscraft.jpg",
-    paper: "",
-    code: ""
+    paper: "https://arxiv.org/abs/2511.00780",
+    code: "https://github.com/zcyyc/Build-bench"
   },
   {
     year: 2026,
@@ -32,8 +32,8 @@ const publications = [
     title: "EvidenT: An Evidence-Preserving Framework for Iterative System-Level Package Repair",
     authors: "Chenyu Zhao, Minghua Ma*, Shenglin Zhang, Zeshun Huang, Yongqian Sun, Chetan Bansal, Saravan Rajmohan, Dan Pei.",
     image: "assets/publications/2026-issta-evident.jpg",
-    paper: "",
-    code: ""
+    paper: "https://arxiv.org/abs/2605.08621",
+    code: "https://github.com/zcyyc/EvidenT"
   },
   {
     year: 2025,
@@ -44,7 +44,7 @@ const publications = [
     title: "Bridging Edge and Cloud: A Knowledge-Enhanced Framework for Efficient Time Series Anomaly Detection",
     authors: "Shenglin Zhang, Jiacheng Zhang, Guohua Liu, Shiqi Chen, Chenyu Zhao, Minghua Ma, Yutong Chen, Yongqian Sun*, Dan Pei.",
     image: "assets/publications/2025-tsc-edge-cloud.jpg",
-    paper: "",
+    paper: "https://doi.org/10.1109/TSC.2025.3610402",
     code: ""
   },
   {
@@ -56,7 +56,7 @@ const publications = [
     title: "Integrating GraphSAGE and Mamba for Self-Supervised Spatio-Temporal Fault Detection in Microservice Systems",
     authors: "Shenglin Zhang, Yingke Li, Jianjin Tang, Chenyu Zhao, Wenwei Gu, Yongqian Sun*, Dan Pei.",
     image: "assets/publications/2025-issre-graphsage-mamba.jpg",
-    paper: "",
+    paper: "https://doi.org/10.1109/ISSRE66568.2025.00041",
     code: ""
   },
   {
@@ -68,7 +68,7 @@ const publications = [
     title: "LogEval: A Comprehensive Benchmark Suite for LLMs in Log Analysis",
     authors: "Tianyu Cui, Shiyu Ma, Ziang Chen, Tong Xiao, Chenyu Zhao, Shimin Tao, Yilun Liu, Shenglin Zhang*, Duoming Lin, Changchang Liu, Yuzhe Cai, Weibin Meng, Yongqian Sun, Dan Pei.",
     image: "assets/publications/2025-emse-logeval.jpg",
-    paper: "https://nkcs.iops.ai/wp-content/uploads/2026/01/LogEval-A-comprehensive-benchmark-suite-for-LLMs-in-log-analysis.pdf",
+    paper: "https://doi.org/10.1007/s10664-025-10701-6",
     code: "https://github.com/LinDuoming/LogEval"
   },
   {
@@ -80,7 +80,7 @@ const publications = [
     title: "FlowXpert: Expertizing Troubleshooting Workflow Orchestration with Knowledge Base and Multi-Agent Coevolution",
     authors: "Binpeng Shi, Yu Luo, Jingya Wang, Yongxin Zhao, Shenglin Zhang*, Bowen Hao, Chenyu Zhao, Yongqian Sun, Zhi Zhang, Ronghua Sun, Haihua Li, Wei Song, Xiaolong Chen, Jingbo Miao, Dan Pei.",
     image: "assets/publications/2025-kdd-flowxpert.jpg",
-    paper: "",
+    paper: "https://doi.org/10.1145/3711896.3737221",
     code: ""
   },
   {
@@ -92,7 +92,7 @@ const publications = [
     title: "LLM-Augmented Ticket Aggregation for Low-cost Mobile OS Defect Resolution",
     authors: "Yongqian Sun, Bowen Hao, Xiaotian Wang, Chenyu Zhao, Yongxin Zhao, Binpeng Shi, Shenglin Zhang*, Qiao Ge, Wenhu Li, Hua Wei, Dan Pei.",
     image: "assets/publications/2025-fse-ticket-aggregation.jpg",
-    paper: "",
+    paper: "https://doi.org/10.1145/3696630.3728547",
     code: ""
   },
   {
@@ -104,8 +104,8 @@ const publications = [
     title: "No More Data Silos: Unified Microservice Failure Diagnosis with Temporal Knowledge Graph",
     authors: "Shenglin Zhang, Yongxin Zhao, Sibo Xia, Shirui Wei, Yongqian Sun*, Chenyu Zhao, Shiyu Ma, Junhua Kuang, Bolin Zhu, Lemeng Pan, Yicheng Guo, Dan Pei.",
     image: "assets/publications/2024-tsc-data-silos.jpg",
-    paper: "",
-    code: ""
+    paper: "https://doi.org/10.1109/TSC.2024.3489444",
+    code: "https://github.com/AIOps-Lab-NKU/UniDiag"
   },
   {
     year: 2023,
@@ -116,7 +116,20 @@ const publications = [
     title: "Robust Multimodal Failure Detection for Microservice Systems",
     authors: "Chenyu Zhao, Minghua Ma, Zhenyu Zhong, Shenglin Zhang*, Zhiyuan Tan, Xiao Xiong, Lulu Yu, Jiayi Feng, Yongqian Sun, Yuzhi Zhang, Dan Pei, Qingwei Lin, Dongmei Zhang.",
     image: "assets/publications/2023-kdd-multimodal-failure.jpg",
-    paper: "",
+    paper: "https://doi.org/10.1145/3580305.3599902",
+    code: "https://github.com/AIOps-Lab-NKU/AnoFusion"
+  },
+  {
+    year: 2021,
+    venue: "ISSRE'21",
+    ccf: "B",
+    type: { en: "Conference", zh: "会议" },
+    fullVenue: "IEEE International Symposium on Software Reliability Engineering · Wuhan, China",
+    title: "Robust KPI Anomaly Detection for Large-Scale Software Services with Partial Labels",
+    authors: "Shenglin Zhang, Chenyu Zhao, Yicheng Sui, Ya Su*, Yongqian Sun, Yuzhi Zhang, Dan Pei, Yizhe Wang.",
+    image: "assets/publications/2021-issre-puad.jpg",
+    paper: "https://nkcs.iops.ai/wp-content/uploads/2021/12/paper-ISSRE21-PUAD.pdf",
+    slides: "https://nkcs.iops.ai/wp-content/uploads/2021/12/slides-ISSRE21-PUAD.pdf",
     code: ""
   }
 ];
@@ -136,10 +149,8 @@ const emphasizeOwner = (authors) => escapeHtml(authors).replace(
   "<strong>$&</strong>"
 );
 
-const renderLink = (url, label, hint) => {
-  if (!url) {
-    return `<span class="pub-link is-placeholder" title="${escapeHtml(hint)}">${escapeHtml(label)}</span>`;
-  }
+const renderLink = (url, label) => {
+  if (!url) return "";
 
   return `<a class="pub-link" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)} <span aria-hidden="true">↗</span></a>`;
 };
@@ -147,8 +158,8 @@ const renderLink = (url, label, hint) => {
 const renderPublication = (publication) => {
   const imageLabel = isChinese ? "框架图待补充" : "Framework figure";
   const paperLabel = isChinese ? "论文" : "Paper";
+  const slidesLabel = isChinese ? "幻灯片" : "Slides";
   const codeLabel = isChinese ? "代码" : "Code";
-  const linkHint = isChinese ? "可在 publications.js 中补充链接" : "Add the URL in publications.js";
 
   return `
     <article class="publication">
@@ -168,8 +179,9 @@ const renderPublication = (publication) => {
         <p class="authors">${emphasizeOwner(publication.authors)}</p>
         <p class="venue-full"><span>${escapeHtml(publication.type[isChinese ? "zh" : "en"])}</span>${escapeHtml(publication.fullVenue)}</p>
         <div class="pub-actions">
-          ${renderLink(publication.paper, paperLabel, linkHint)}
-          ${renderLink(publication.code, codeLabel, linkHint)}
+          ${renderLink(publication.paper, paperLabel)}
+          ${renderLink(publication.slides, slidesLabel)}
+          ${renderLink(publication.code, codeLabel)}
         </div>
       </div>
     </article>`;

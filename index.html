@@ -13,9 +13,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="topbar-home" href="#top">Chenyu Zhao</a>
+        <nav class="topbar-nav" aria-label="Primary navigation">
+          <a href="#top">Biography</a>
+          <a href="#highlights">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#publications">Publications</a>
+        </nav>
+        <div class="topbar-lang" aria-label="Language switch">
+          <span aria-current="page">EN</span><span class="lang-divider" aria-hidden="true">｜</span><a href="zh.html" lang="zh-CN">中文</a>
+        </div>
+      </div>
+    </div>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="#top">NANKAI UNIVERSITY</a>
         <div class="sidebar-profile">
           <img src="assets/profile.jpg" alt="Portrait of Chenyu Zhao" />
           <h2>Chenyu Zhao</h2>
@@ -24,21 +37,16 @@
           <p class="sidebar-affiliation">College of Software<br />Nankai University</p>
           <p class="sidebar-location">Tianjin, China</p>
         </div>
-        <nav aria-label="Primary navigation">
-          <a href="#top">Biography</a>
-          <a href="#experience">Experience</a>
-          <a href="#highlights">Research</a>
+        <div class="sidebar-links">
+          <a href="https://github.com/zcyyc" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           <a href="#publications">Publications</a>
-        </nav>
+        </div>
       </div>
     </header>
     <main id="top">
       <section class="hero" id="about">
-        <div class="lang-switch" aria-label="Language switch">
-          <span aria-current="page">EN</span><span class="lang-divider" aria-hidden="true">｜</span><a href="zh.html" lang="zh-CN">中文</a>
-        </div>
         <div class="hero-copy">
-          <p class="eyebrow">// About</p>
+          <p class="eyebrow">Chenyu Zhao · Ph.D. Student · Nankai University</p>
           <h1>Biography</h1>
           <p class="intro">I am a Ph.D. student in the College of Software at Nankai University. Before starting my doctoral study, I worked as an R&amp;D engineer at Alibaba Cloud Intelligence Group.</p>
           <p class="intro secondary-intro">My research interests include <strong>AIOps</strong> and <strong>AgentOps</strong>, with a focus on building intelligent systems that can diagnose, recover from, and learn through software failures.</p>
@@ -75,7 +83,7 @@
       <section class="section publications" id="publications">
         <div class="section-heading">
           <div class="section-label">Publications</div>
-          <p class="section-summary">10 selected publications · 8 at CCF A venues.</p>
+          <p class="section-summary">11 selected publications · 8 at CCF A venues.</p>
           <p class="publication-note">Listed in reverse chronological order. * Corresponding author</p>
         </div>
         <div class="publication-list">

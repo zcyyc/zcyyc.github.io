@@ -13,9 +13,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <a class="topbar-home" href="#top">赵晨宇</a>
+        <nav class="topbar-nav" aria-label="主导航">
+          <a href="#top">个人简介</a>
+          <a href="#highlights">研究方向</a>
+          <a href="#experience">教育与经历</a>
+          <a href="#publications">论文成果</a>
+        </nav>
+        <div class="topbar-lang" aria-label="语言切换">
+          <a href="index.html" lang="en">EN</a><span class="lang-divider" aria-hidden="true">｜</span><span aria-current="page">中文</span>
+        </div>
+      </div>
+    </div>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="#top">南开大学</a>
         <div class="sidebar-profile">
           <img src="assets/profile.jpg" alt="赵晨宇的个人照片" />
           <h2>赵晨宇</h2>
@@ -24,21 +37,16 @@
           <p class="sidebar-affiliation">南开大学软件学院<br />软件工程专业</p>
           <p class="sidebar-location">中国天津</p>
         </div>
-        <nav aria-label="主导航">
-          <a href="#top">个人简介</a>
-          <a href="#experience">教育与经历</a>
-          <a href="#highlights">研究方向</a>
+        <div class="sidebar-links">
+          <a href="https://github.com/zcyyc" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           <a href="#publications">论文成果</a>
-        </nav>
+        </div>
       </div>
     </header>
     <main id="top">
       <section class="hero" id="about">
-        <div class="lang-switch" aria-label="语言切换">
-          <a href="index.html" lang="en">EN</a><span class="lang-divider" aria-hidden="true">｜</span><span aria-current="page">中文</span>
-        </div>
         <div class="hero-copy">
-          <p class="eyebrow">// 关于我</p>
+          <p class="eyebrow">赵晨宇 · 博士研究生 · 南开大学</p>
           <h1>个人简介</h1>
           <p class="intro">我目前就读于南开大学软件学院，攻读软件工程专业博士学位。在开始博士阶段学习之前，我曾在阿里巴巴集团阿里云智能担任研发工程师。</p>
           <p class="intro secondary-intro">我的研究方向包括 <strong>AIOps</strong> 和 <strong>AgentOps</strong>，重点关注如何构建能够诊断软件故障、从失败中恢复并持续学习的智能系统。</p>
@@ -75,7 +83,7 @@
       <section class="section publications" id="publications">
         <div class="section-heading">
           <div class="section-label">论文成果</div>
-          <p class="section-summary">10 篇代表性论文 · 其中 8 篇发表于 CCF A 类会议或期刊。</p>
+          <p class="section-summary">11 篇代表性论文 · 其中 8 篇发表于 CCF A 类会议或期刊。</p>
           <p class="publication-note">按时间倒序排列。* 通讯作者</p>
         </div>
         <div class="publication-list">
