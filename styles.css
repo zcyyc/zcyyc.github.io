@@ -106,8 +106,8 @@ a { color: inherit; text-decoration: none; }
   align-items: stretch;
 }
 .sidebar-profile { margin-top: 0; text-align: center; }
-.profile-photo { width: 154px; aspect-ratio: 1; margin: 0 auto 18px; overflow: hidden; background: #edf0fb; border: 5px solid rgba(247, 249, 255, .92); border-radius: 50%; box-shadow: 0 10px 28px rgba(54, 72, 148, .14); }
-.profile-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 26%; transform: scale(1.02); transform-origin: center 35%; }
+.profile-photo { width: 154px; aspect-ratio: 1; margin: 0 auto 18px; overflow: hidden; background: #3b80b4; border: 5px solid rgba(247, 249, 255, .92); border-radius: 50%; box-shadow: 0 10px 28px rgba(54, 72, 148, .14); }
+.profile-photo img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; transform: scale(1.15); transform-origin: center 44%; }
 .sidebar-profile h2 { margin: 0; font-size: 1.45rem; line-height: 1.2; letter-spacing: -.035em; }
 .sidebar-native-name { margin: 5px 0 0; color: var(--muted); font-size: .82rem; }
 .sidebar-role { margin: 10px 0 0; color: var(--accent-dark); font-size: .85rem; font-weight: 700; }
